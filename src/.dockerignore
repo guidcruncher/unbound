@@ -1,0 +1,19 @@
+# Ignore hidden files and directories
+.git
+.gitignore
+.dockerignore
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Ignore local environment/config files
+.env
+unbound.conf
+/var/lib/unbound/
+
+# Ignore documentation or build artifacts
+README.md
+docs/
+dist/

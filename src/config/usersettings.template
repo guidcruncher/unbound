@@ -1,0 +1,8 @@
+server:
+
+    interface: ${INTERFACE}
+    port: ${PORT}
+
+    # Allow queries from your local network
+    # Adjust 192.168.1.0/24 to match your actual home network subnet
+    access-control: ${ALLOWED_NETWORK} allow

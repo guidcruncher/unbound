@@ -1,0 +1,14 @@
+services:
+  unbound:
+    image: guidcruncher/unbound-dns
+    build: .
+    container_name: unbound
+    hostname: unbound
+    restart: unless-stopped
+    ports:
+      - "5335:5335/udp"
+      - "5335:5335/tcp"
+    environment:
+      - ALLOWED_NETWORK=192.168.1.0/24
+      - INTERFACE=0.0.0.0
+      - PORT=5335
